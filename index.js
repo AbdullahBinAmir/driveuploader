@@ -10,9 +10,9 @@ var corsOptions = {
 
 const app = express();
 
-app.use(bp.json({limit:'50mb'}))
+app.use(bp.json({limit:'150mb'}))
 
-app.use(bp.urlencoded({limit: "50mb", extended: true, parameterLimit:50000}))
+app.use(bp.urlencoded({limit: "150mb", extended: true, parameterLimit:500000000}))
 
 app.use(cors(corsOptions));
 
