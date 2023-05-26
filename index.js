@@ -12,7 +12,7 @@ const app = express();
 
 app.use(bp.json({limit:'150mb'}))
 
-app.use(bp.urlencoded({limit: "150mb", extended: true, parameterLimit:500000000}))
+app.use(bp.urlencoded({limit: "150mb", extended: true}))
 
 app.use(cors(corsOptions));
 
